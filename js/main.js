@@ -61,15 +61,19 @@
   /* ── Scroll reveal (IntersectionObserver) ───────────────── */
   function initScrollReveal() {
     const targets = document.querySelectorAll(
-      '.reveal, .adv-card, .service-item, .agent-card, .client-card, .tl-item'
+      '.reveal, .scroll-reveal, .adv-card, .service-item, .agent-card, .client-card, .tl-item'
     );
     if (!targets.length) return;
 
     const observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          // Use CSS delay classes instead of dynamic calculation for better performance
-          entry.target.classList.add('visible');
+          // Add appropriate class based on element type
+          if (entry.target.classList.contains('scroll-reveal')) {
+            entry.target.classList.add('revealed');
+          } else {
+            entry.target.classList.add('visible');
+          }
           observer.unobserve(entry.target);
         }
       });
