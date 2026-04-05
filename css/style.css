@@ -2019,16 +2019,16 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* Délais d'animation */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-500 { animation-delay: 0.5s; }
-.delay-600 { animation-delay: 0.6s; }
-.delay-700 { animation-delay: 0.7s; }
-.delay-800 { animation-delay: 0.8s; }
-.delay-900 { animation-delay: 0.9s; }
-.delay-1000 { animation-delay: 1.0s; }
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
+.delay-600 { transition-delay: 0.6s; }
+.delay-700 { transition-delay: 0.7s; }
+.delay-800 { transition-delay: 0.8s; }
+.delay-900 { transition-delay: 0.9s; }
+.delay-1000 { transition-delay: 1.0s; }
 
 /* ── Animations de Scroll Fluides ─────────────────────────── */
 @keyframes vehicleMove {
@@ -2068,44 +2068,43 @@ p:last-child { margin-bottom: 0; }
 
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(60px) scale(0.95);
-  filter: blur(10px);
-  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translate3d(0, 60px, 0) scale(0.95);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
 }
 
 .scroll-reveal.revealed {
   opacity: 1;
-  transform: translateY(0) scale(1);
-  filter: blur(0px);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 /* Variations de scroll reveal */
 .scroll-reveal-left {
-  transform: translateX(-30px) scale(0.96);
+  transform: translate3d(-30px, 0, 0) scale(0.96);
 }
 .scroll-reveal-left.revealed {
-  transform: translateX(0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .scroll-reveal-right {
-  transform: translateX(30px) scale(0.96);
+  transform: translate3d(30px, 0, 0) scale(0.96);
 }
 .scroll-reveal-right.revealed {
-  transform: translateX(0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .scroll-reveal-bottom {
-  transform: translateY(30px) scale(0.96);
+  transform: translate3d(0, 30px, 0) scale(0.96);
 }
 .scroll-reveal-bottom.revealed {
-  transform: translateY(0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .scroll-reveal-scale {
-  transform: scale(0.85);
+  transform: translate3d(0, 0, 0) scale(0.85);
 }
 .scroll-reveal-scale.revealed {
-  transform: scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 /* ── Animations d'Entrée pour la Hero ─────────────────────── */
