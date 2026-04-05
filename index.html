@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ERM International Group – Leader en gestion de flotte et suivi carburant GPS/GSM en Afrique. Partenaire Novatronica® Portugal.">
+  <title>ERM International Group – Gestion de Flotte & Carburant GPS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO WITH INTEGRATED HEADER
+  ════════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <!-- Integrated Header -->
+    <header id="header" class="hero-header home-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <img src="images/logo.webp" alt="ERM International Group Logo">
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="active">Accueil</a>
+          <a href="about.html">Présentation</a>
+          <a href="services.html">Services</a>
+          <a href="clients.html">Clients</a>
+          <a href="agents.html">Agents</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="nav-cta">Nous contacter</a>
+        </nav>
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="container hero-inner">
+
+      <!-- Texte gauche -->
+      <div class="hero-content">
+        <h1 class="hero-title animate-slide-top">
+          Suivi précis du <em>carburant</em> avec la technologie avancée
+        </h1>
+        <p class="hero-subtitle animate-slide-bottom delay-200">
+          Contrôlez et optimisez vos dépenses en carburant avec les solutions de suivi avancées d'ERM International Group. Précision maximale et économies garanties.
+        </p>
+        <div class="hero-features animate-fade-stagger delay-400">
+          <div class="feature-item">
+            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span>Contrôle carburant</span>
+          </div>
+          <div class="feature-item">
+            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <span>Anti-fraude</span>
+          </div>
+          <div class="feature-item">
+            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            <span>Économies</span>
+          </div>
+        </div>
+        <div class="hero-actions animate-scale-in delay-600">
+          <a href="services.html" class="btn btn-primary">
+            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Découvrir nos solutions
+          </a>
+        </div>
+      </div>
+
+      <!-- Visuel droit -->
+      <div class="hero-visual animate-slide-right delay-300">
+        <div class="hero-dashboard">
+          <div class="dashboard-header">
+            <div class="dashboard-brand">
+              <div class="brand-logo">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div class="brand-text">
+                <div class="brand-name">ERM</div>
+                <div class="brand-tag">Suivi Temps Réel</div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-map">
+            <svg class="dashboard-svg" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+              <!-- Enhanced definitions with more gradients and effects -->
+              <defs>
+                <pattern id="grid" width="15" height="15" patternUnits="userSpaceOnUse">
+                  <path d="M 15 0 L 0 0 0 15" fill="none" stroke="#2a2a4a" stroke-width="0.3" opacity="0.2"/>
+                </pattern>
+                <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+                  <stop offset="30%" style="stop-color:#1a1a2e;stop-opacity:1" />
+                  <stop offset="70%" style="stop-color:#16213e;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#0f0f23;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="routeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#00d4ff" />
+                  <stop offset="25%" style="stop-color:#00ff88" />
+                  <stop offset="50%" style="stop-color:#22c55e" />
+                  <stop offset="75%" style="stop-color:#00ff88" />
+                  <stop offset="100%" style="stop-color:#00d4ff" />
+                </linearGradient>
+                <radialGradient id="vehicleGlow" cx="50%" cy="50%" r="60%">
+                  <stop offset="0%" style="stop-color:#00d4ff" />
+                  <stop offset="50%" style="stop-color:#00ff88" />
+                  <stop offset="100%" style="stop-color:#00d4ff" />
+                </radialGradient>
+                <radialGradient id="fuelGradient" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" style="stop-color:#22c55e" />
+                  <stop offset="60%" style="stop-color:#84cc16" />
+                  <stop offset="100%" style="stop-color:#ff6b6b" />
+                </radialGradient>
+                <radialGradient id="alertGradient" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" style="stop-color:#ff6b6b" />
+                  <stop offset="50%" style="stop-color:#ff4757" />
+                  <stop offset="100%" style="stop-color:#ff3838" />
+                </radialGradient>
+                <linearGradient id="efficiencyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#ff6b6b" />
+                  <stop offset="50%" style="stop-color:#ffa500" />
+                  <stop offset="100%" style="stop-color:#22c55e" />
+                </linearGradient>
+              </defs>
+
+              <!-- Enhanced background with multiple layers -->
+              <rect width="400" height="280" fill="url(#skyGradient)"/>
+              <rect width="400" height="280" fill="url(#grid)"/>
+
+              <!-- Modern city skyline with more detail -->
+              <path d="M0 200 L15 195 L30 205 L45 190 L60 210 L75 195 L90 215 L105 200 L120 220 L135 205 L150 225 L165 210 L180 230 L195 215 L210 235 L225 220 L240 240 L255 225 L270 245 L285 230 L300 250 L315 235 L330 255 L345 240 L360 260 L375 245 L390 265 L400 270 L400 280 L0 280 Z" fill="#0a0a1a" opacity="0.7"/>
+              <path d="M0 220 L10 218 L20 222 L30 216 L40 224 L50 218 L60 226 L70 220 L80 228 L90 222 L100 230 L110 224 L120 232 L130 226 L140 234 L150 228 L160 236 L170 230 L180 238 L190 232 L200 240 L210 234 L220 242 L230 236 L240 244 L250 238 L260 246 L270 240 L280 248 L290 242 L300 250 L310 244 L320 252 L330 246 L340 254 L350 248 L360 256 L370 250 L380 258 L390 252 L400 260 L400 280 L0 280 Z" fill="#1a1a2e" opacity="0.4"/>
+
+              <!-- Enhanced highway system with multiple lanes -->
+              <path d="M0 240 L400 220" stroke="#2a2a4a" stroke-width="12" fill="none"/>
+              <path d="M0 240 L400 220" stroke="#333" stroke-width="10" fill="none"/>
+              <path d="M0 240 L400 220" stroke="#444" stroke-width="8" fill="none" stroke-dasharray="1,6"/>
+              <path d="M0 240 L400 220" stroke="#555" stroke-width="2" fill="none" stroke-dasharray="0.5,3"/>
+
+              <!-- Animated route with enhanced flow -->
+              <path d="M-30 245 Q60 230 140 245 Q220 260 300 245 Q380 230 450 245" stroke="url(#routeGradient)" stroke-width="4" fill="none" stroke-linecap="round">
+                <animate attributeName="stroke-dasharray" values="0,25;25,0" dur="1.5s" repeatCount="indefinite"/>
+              </path>
+
+              <!-- Enhanced vehicles with different types and better animations -->
+              <!-- Truck -->
+              <g transform="translate(100,238)">
+                <circle cx="0" cy="0" r="15" fill="url(#vehicleGlow)" opacity="0.4"/>
+                <rect x="-14" y="-6" width="28" height="12" rx="4" fill="#00d4ff" stroke="#fff" stroke-width="1"/>
+                <rect x="-12" y="-4" width="6" height="8" rx="1" fill="#333" opacity="0.8"/>
+                <rect x="6" y="-4" width="6" height="8" rx="1" fill="#333" opacity="0.8"/>
+                <circle cx="-10" cy="10" r="2.5" fill="#333"/>
+                <circle cx="10" cy="10" r="2.5" fill="#333"/>
+                <circle cx="-8" cy="10" r="1.5" fill="#666"/>
+                <circle cx="8" cy="10" r="1.5" fill="#666"/>
+                <animateTransform attributeName="transform" type="translate" values="0,0; 12,0; 0,0" dur="8s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- Van -->
+              <g transform="translate(180,242)">
+                <circle cx="0" cy="0" r="12" fill="url(#vehicleGlow)" opacity="0.3"/>
+                <rect x="-10" y="-5" width="20" height="10" rx="3" fill="#00ff88" stroke="#fff" stroke-width="0.8"/>
+                <circle cx="-7" cy="8" r="2" fill="#333"/>
+                <circle cx="7" cy="8" r="2" fill="#333"/>
+                <rect x="-8" y="-3" width="4" height="6" rx="1" fill="#333" opacity="0.7"/>
+                <rect x="4" y="-3" width="4" height="6" rx="1" fill="#333" opacity="0.7"/>
+                <animateTransform attributeName="transform" type="translate" values="0,0; -8,0; 0,0" dur="6s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- Car -->
+              <g transform="translate(260,236)">
+                <circle cx="0" cy="0" r="10" fill="url(#vehicleGlow)" opacity="0.5"/>
+                <rect x="-8" y="-4" width="16" height="8" rx="2" fill="#ffa500" stroke="#fff" stroke-width="0.5"/>
+                <circle cx="-5" cy="6" r="1.5" fill="#333"/>
+                <circle cx="5" cy="6" r="1.5" fill="#333"/>
+                <animateTransform attributeName="transform" type="translate" values="0,0; 10,0; 0,0" dur="7s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- GPS satellites with enhanced design -->
+              <g transform="translate(40,40)">
+                <circle cx="0" cy="0" r="10" fill="#00d4ff" opacity="0.9"/>
+                <path d="M-6,-6 L6,6 M6,-6 L-6,6" stroke="#fff" stroke-width="1.5"/>
+                <circle cx="0" cy="0" r="4" fill="none" stroke="#fff" stroke-width="1" opacity="0.7"/>
+                <animate attributeName="opacity" values="0.9;0.5;0.9" dur="2.5s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" dur="20s" repeatCount="indefinite"/>
+              </g>
+
+              <g transform="translate(360,35)">
+                <circle cx="0" cy="0" r="8" fill="#00ff88" opacity="0.8"/>
+                <path d="M-5,-5 L5,5 M5,-5 L-5,5" stroke="#fff" stroke-width="1.2"/>
+                <circle cx="0" cy="0" r="3" fill="none" stroke="#fff" stroke-width="0.8" opacity="0.6"/>
+                <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="rotate" values="0 0 0;-360 0 0" dur="25s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- Enhanced monitoring panels -->
+              <g transform="translate(20,100)">
+                <rect x="-30" y="-20" width="60" height="40" rx="10" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1.5" opacity="0.95"/>
+                <text x="0" y="-5" text-anchor="middle" fill="#00d4ff" font-size="9" font-weight="bold">CARBURANT</text>
+                <rect x="-22" y="-2" width="44" height="8" rx="4" fill="#333"/>
+                <rect x="-22" y="-2" width="35" height="8" rx="4" fill="url(#fuelGradient)">
+                  <animate attributeName="width" values="35;40;35" dur="4s" repeatCount="indefinite"/>
+                </rect>
+                <text x="0" y="12" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">78%</text>
+                <text x="0" y="22" text-anchor="middle" fill="#00ff88" font-size="6">OPTIMAL</text>
+              </g>
+
+              <g transform="translate(320,110)">
+                <rect x="-30" y="-20" width="60" height="40" rx="10" fill="#1a1a2e" stroke="#00ff88" stroke-width="1.5" opacity="0.95"/>
+                <text x="0" y="-5" text-anchor="middle" fill="#00ff88" font-size="9" font-weight="bold">STATUT</text>
+                <circle cx="0" cy="5" r="8" fill="#22c55e" opacity="0.9"/>
+                <circle cx="0" cy="5" r="4" fill="#fff">
+                  <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <text x="0" y="18" text-anchor="middle" fill="#22c55e" font-size="7" font-weight="bold">ACTIF</text>
+                <text x="0" y="25" text-anchor="middle" fill="#00d4ff" font-size="5">TEMPS RÉEL</text>
+              </g>
+
+              <!-- Efficiency meter -->
+              <g transform="translate(170,40)">
+                <rect x="-35" y="-15" width="70" height="30" rx="8" fill="#1a1a2e" stroke="#ffa500" stroke-width="1.5" opacity="0.95"/>
+                <text x="0" y="-3" text-anchor="middle" fill="#ffa500" font-size="8" font-weight="bold">EFFICACITÉ</text>
+                <rect x="-25" y="2" width="50" height="6" rx="3" fill="#333"/>
+                <rect x="-25" y="2" width="42" height="6" rx="3" fill="url(#efficiencyGradient)">
+                  <animate attributeName="width" values="42;48;42" dur="3s" repeatCount="indefinite"/>
+                </rect>
+                <text x="0" y="18" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">94.2%</text>
+                <text x="0" y="24" text-anchor="middle" fill="#84cc16" font-size="5">EXCELLENT</text>
+              </g>
+
+              <!-- Alert system -->
+              <g transform="translate(320,50)">
+                <circle cx="0" cy="0" r="12" fill="url(#alertGradient)" opacity="0.8"/>
+                <path d="M-4,-2 L4,-2 L0,4 Z" fill="#fff"/>
+                <circle cx="0" cy="0" r="6" fill="none" stroke="#fff" stroke-width="1"/>
+                <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- Enhanced data streams -->
+              <path d="M100 238 L20 100" stroke="#00d4ff" stroke-width="1.5" opacity="0.7" stroke-dasharray="4,4">
+                <animate attributeName="stroke-dashoffset" values="8;0" dur="2s" repeatCount="indefinite"/>
+              </path>
+
+              <path d="M180 242 L170 40" stroke="#00ff88" stroke-width="1.5" opacity="0.7" stroke-dasharray="4,4">
+                <animate attributeName="stroke-dashoffset" values="8;0" dur="2.5s" repeatCount="indefinite"/>
+              </path>
+
+              <path d="M260 236 L320 110" stroke="#ffa500" stroke-width="1.5" opacity="0.7" stroke-dasharray="4,4">
+                <animate attributeName="stroke-dashoffset" values="8;0" dur="3s" repeatCount="indefinite"/>
+              </path>
+
+              <!-- Route markers with enhanced design -->
+              <g transform="translate(50,250)">
+                <circle cx="0" cy="0" r="6" fill="#00d4ff" opacity="0.9"/>
+                <rect x="-8" y="-12" width="16" height="8" rx="2" fill="#1a1a2e" opacity="0.9"/>
+                <text x="0" y="-6" text-anchor="middle" fill="#00d4ff" font-size="6" font-weight="bold">DÉPÔT</text>
+                <animate attributeName="opacity" values="0.9;0.6;0.9" dur="3s" repeatCount="indefinite"/>
+              </g>
+
+              <g transform="translate(350,250)">
+                <circle cx="0" cy="0" r="6" fill="#00ff88" opacity="0.9"/>
+                <rect x="-12" y="-12" width="24" height="8" rx="2" fill="#1a1a2e" opacity="0.9"/>
+                <text x="0" y="-6" text-anchor="middle" fill="#00ff88" font-size="6" font-weight="bold">DESTINATION</text>
+                <animate attributeName="opacity" values="0.9;0.6;0.9" dur="3.5s" repeatCount="indefinite"/>
+              </g>
+
+              <!-- Performance metrics overlay -->
+              <g transform="translate(200,120)">
+                <rect x="-45" y="-25" width="90" height="50" rx="10" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1.5" opacity="0.95"/>
+                <text x="0" y="-8" text-anchor="middle" fill="#00d4ff" font-size="8" font-weight="bold">PERFORMANCE</text>
+                <text x="0" y="2" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">99.7%</text>
+                <text x="0" y="10" text-anchor="middle" fill="#00ff88" font-size="6">DISPONIBILITÉ</text>
+                <line x1="-30" y1="15" x2="30" y2="15" stroke="#333" stroke-width="1"/>
+                <text x="-35" y="22" text-anchor="start" fill="#84cc16" font-size="5">ÉCONOMIE: 23%</text>
+                <text x="-35" y="28" text-anchor="start" fill="#00d4ff" font-size="5">DISTANCE: 12,450km</text>
+                <text x="-35" y="34" text-anchor="start" fill="#ffa500" font-size="5">VÉHICULES: 247</text>
+              </g>
+
+              <!-- Real-time activity indicator -->
+              <g transform="translate(20,40)">
+                <rect x="-25" y="-12" width="50" height="24" rx="6" fill="#1a1a2e" stroke="#00ff88" stroke-width="1" opacity="0.9"/>
+                <circle cx="-12" cy="0" r="3" fill="#22c55e">
+                  <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+                </circle>
+                <text x="2" y="2" text-anchor="start" fill="#00ff88" font-size="7" font-weight="bold">EN DIRECT</text>
+                <text x="2" y="10" text-anchor="start" fill="#fff" font-size="5">247 véhicules actifs</text>
+              </g>
+            </svg>
+          </div>
+          <div class="dashboard-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <div class="stat-value">24/7</div>
+              <div class="stat-label">Surveillance</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div class="stat-value">99.9%</div>
+              <div class="stat-label">Précision</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </div>
+              <div class="stat-value">Économies</div>
+              <div class="stat-label">Réalisées</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-floating-elements">
+          <div class="floating-card card-1">
+            <div class="card-icon">
+              <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            </div>
+            <div class="card-content">
+              <div class="card-value">Suivi Live</div>
+              <div class="card-label">Contrôle en temps réel</div>
+            </div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-icon">
+              <svg class="svg-icon" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div class="card-content">
+              <div class="card-value">Économie</div>
+              <div class="card-label">Jusqu'à 40% d'économies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PRÉSENTATION RAPIDE
+  ════════════════════════════════════════════════════════════ -->
+  <section class="about-section section scroll-reveal-bottom">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-content scroll-reveal-left">
+          <span class="section-label">À propos</span>
+          <h2 class="section-title">
+            Un groupe de confiance au cœur de l'<span class="green">Afrique</span>
+          </h2>
+          <div class="divider divider-left"></div>
+          <p style="margin-top:24px; font-size:1.05rem; line-height:1.9;">
+            Madame, Monsieur,
+          </p>
+          <p style="font-size:1.05rem; line-height:1.9;">
+            Le Groupe ERM International, société congolaise partenaire de Novatronica® Portugal,
+            entreprise spécialisée depuis plus de 15 ans dans le développement et la production
+            de logiciels et de matériels intégrant les technologies GPS et GSM/GPRS, est un leader
+            du marché des systèmes de suivi de véhicules et de gestion du carburant, du ravitaillement
+            à la consommation lors des trajets grâce au GPS.
+          </p>
+          <div class="about-features">
+            <div class="feature-chip"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></span> Suivi GPS temps réel</div>
+            <div class="feature-chip"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4v16h2V9h11l-2 4 2 4H7V4H5z"/></svg></span> Gestion carburant</div>
+            <div class="feature-chip"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></span> Intégration CAN bus</div>
+            <div class="feature-chip"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M12 18h.01"/></svg></span> Alertes mobiles</div>
+          </div>
+          <a href="about.html" class="btn btn-ghost" style="margin-top:28px;">
+            En savoir plus <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="about-img-wrap reveal scroll-reveal-right">
+          <div class="about-map-card">
+            <img src="images/afrique.webp" alt="Carte de l'Afrique avec le Congo au centre" class="about-map-image">
+            <div class="map-overlay" aria-hidden="true">
+              <div class="map-glow"></div>
+              <div class="map-pin"></div>
+              <div class="traffic-path traffic-path-1"><span class="traffic-pulse pulse-1"></span></div>
+              <div class="traffic-path traffic-path-2"><span class="traffic-pulse pulse-2"></span></div>
+              <div class="traffic-flow traffic-flow-1"></div>
+              <div class="traffic-flow traffic-flow-2"></div>
+              <div class="traffic-flow traffic-flow-3"></div>
+              <div class="traffic-flow traffic-flow-4"></div>
+              <div class="traffic-node traffic-node-1"></div>
+              <div class="traffic-node traffic-node-2"></div>
+              <div class="traffic-node traffic-node-3"></div>
+            </div>
+            <div class="trust-badge-card">
+              <div class="trust-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6c-1.5-1.7-4-1.8-5.7-.3l-.5.5-.5-.5c-1.7-1.5-4.2-1.4-5.7.3-1.8 2-1.6 5.3.4 7.2l5.8 6 5.8-6c2-1.9 2.2-5.2.4-7.2z"/></svg>
+              </div>
+              <div class="trust-text">Confiance</div>
+            </div>
+          </div>
+          <div class="about-badge"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Certifié Novatronica®</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SERVICES – 4 IMAGES ZIG-ZAG
+  ════════════════════════════════════════════════════════════ -->
+  <section class="services-section section scroll-reveal-top">
+    <div class="container">
+      <div class="section-header scroll-reveal-top">
+        <span class="section-label">Nos solutions</span>
+        <h2 class="section-title">Technologies de <span class="green">pointe</span> pour votre flotte</h2>
+        <div class="divider"></div>
+        <p class="section-intro scroll-reveal-fade delay-200">
+          Des systèmes intégrés pour surveiller, optimiser et sécuriser chaque véhicule de votre parc.
+        </p>
+      </div>
+
+      <!-- SERVICE 1 – image gauche, texte droite -->
+      <div class="service-item scroll-reveal-left">
+        <div class="service-img-wrap">
+          <img src="images/imgscetion2.webp" alt="Frotasoft CAN bus">
+        </div>
+        <div class="service-content">
+          <div class="service-num">01 / Frotasoft</div>
+          <h3>Frotasoft <span class="green">CAN bus</span></h3>
+          <p>
+            Le système Frotasoft s'intègre au CAN bus des véhicules pour collecter et
+            centraliser les données en temps réel, permettant une gestion intelligente
+            de la flotte.
+          </p>
+          <span class="service-tag">Intégration véhicule</span>
+        </div>
+      </div>
+
+      <!-- SERVICE 2 – image droite, texte gauche -->
+      <div class="service-item reverse scroll-reveal-right">
+        <div class="service-content">
+          <div class="service-num">02 / TankControl</div>
+          <h3><span class="green">Tank</span>Control</h3>
+          <p>
+            TankControl permet de surveiller avec précision le carburant des véhicules,
+            détecter toute anomalie et envoyer des alertes instantanées pour prévenir
+            les pertes.
+          </p>
+          <span class="service-tag">Surveillance carburant</span>
+        </div>
+        <div class="service-img-wrap">
+          <img src="images/imgscetion1.webp" alt="TankControl – Surveillance carburant">
+        </div>
+      </div>
+
+      <!-- SERVICE 3 – image gauche, texte droite -->
+      <div class="service-item scroll-reveal-left">
+        <div class="service-img-wrap">
+          <img src="images/imgscetion4.webp" alt="Données véhicules">
+        </div>
+        <div class="service-content">
+          <div class="service-num">03 / Données</div>
+          <h3>Données <span class="green">véhicules</span></h3>
+          <p>
+            Le système récupère des données clés du véhicule comme la consommation,
+            la vitesse, la température ou encore le niveau de carburant pour une
+            analyse complète.
+          </p>
+          <span class="service-tag">Analytique avancée</span>
+        </div>
+      </div>
+
+      <!-- SERVICE 4 – image droite, texte gauche -->
+      <div class="service-item reverse scroll-reveal-right">
+        <div class="service-content">
+          <div class="service-num">04 / DUT-E GSM</div>
+          <h3>DUT-E <span class="green">GSM</span></h3>
+          <p>
+            Le dispositif DUT-E GSM assure la transmission des données des véhicules
+            via le réseau mobile, garantissant un suivi fiable et continu.
+          </p>
+          <span class="service-tag">Transmission mobile</span>
+        </div>
+        <div class="service-img-wrap">
+          <img src="images/imgscetion3.webp" alt="DUT-E GSM">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       AVANTAGES / VALEUR – 8 CARDS
+  ════════════════════════════════════════════════════════════ -->
+  <section class="advantages-section section scroll-reveal-fade">
+    <div class="container">
+      <div class="section-header scroll-reveal-top">
+        <span class="section-label">Valeur ajoutée</span>
+        <h2 class="section-title">Pourquoi choisir <span class="green">ERM International</span> ?</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="advantages-grid scroll-reveal-fade">
+
+        <div class="adv-card scroll-reveal-left delay-100">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 19V10"/><path d="M12 19V6"/><path d="M18 19V14"/></svg></div>
+          <h4>Présentation</h4>
+          <p>Ce système permet à nos clients de comptabiliser chaque millilitre de carburant fourni ou consommé et d'en connaître l'impact sur leur budget, de manière globale et individuelle, par véhicule, conducteur, trajet ou autres paramètres.</p>
+        </div>
+
+        <div class="adv-card scroll-reveal-right delay-200">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 5v2M12 17v2M5 12h2M17 12h2"/></svg></div>
+          <h4>Mission</h4>
+          <p>Un outil de travail professionnel qui génère des profits pour l'entreprise en éliminant le gaspillage, les reprises, les écarts, etc.</p>
+        </div>
+
+        <div class="adv-card scroll-reveal-left delay-300">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9v6h4l5 5V4L9 9H5z"/></svg></div>
+          <h4>Contrôle en temps réel</h4>
+          <p>Les gestionnaires de flottes peuvent consulter en quelques clics la quantité de carburant consommée et la quantité restante dans les réservoirs, sans avoir besoin d'appels téléphoniques ni de vérifications sur place.</p>
+        </div>
+
+        <div class="adv-card scroll-reveal-right delay-400">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 19V10"/><path d="M12 19V6"/><path d="M18 19V14"/></svg></div>
+          <h4>Historique des données</h4>
+          <p>Permettez à nos clients d'optimiser leur budget carburant en analysant régulièrement leurs données et en identifiant les axes d'amélioration.</p>
+        </div>
+
+        <div class="adv-card scroll-reveal-left delay-500">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s-4 5-4 9a4 4 0 0 0 8 0c0-4-4-9-4-9z"/><path d="M12 12s-1.5-2.5-1.5-4.5A1.5 1.5 0 0 1 12 6s1.5 2.5 1.5 4.5A1.5 1.5 0 0 1 12 12z"/></svg></div>
+          <h4>Automatisation</h4>
+          <p>Nos clients peuvent transférer des données relatives au carburant vers d'autres applications internes et bénéficier d'intégrations automatisées.</p>
+        </div>
+
+        <div class="adv-card scroll-reveal-right delay-600">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h4>Gains de temps et de ressources</h4>
+          <p>Notre système de suivi du carburant permet aux entreprises de se passer des tableurs Excel, de la collecte manuelle de données et des documents papier. Elles obtiennent ainsi plus d'informations, consomment moins de carburant et ce sans frais supplémentaires.</p>
+        </div>
+
+        <div class="adv-card scroll-reveal-left delay-700">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M8 20l4-4 4 4"/></svg></div>
+          <h4>Précision garantie pour chaque projet</h4>
+          <p>Les gestionnaires de flottes et autres acteurs ont accès à des données précises provenant de plusieurs véhicules, réservoirs, dans toutes les territoires du pays.</p>
+        </div>
+
+        <div class="adv-card scroll-reveal-bottom delay-800">
+          <div class="adv-icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></div>
+          <h4>Avantage du GPS</h4>
+          <p>De nombreuses entreprises et commerçants des secteurs du transport, de la distribution de carburant sont victimes de vols quotidiens faute de systèmes de suivi du carburant. C'est pourquoi le groupe ERM International accompagne ses clients pour garantir un suivi en temps réel.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CLIENTS – APERÇU
+  ════════════════════════════════════════════════════════════ -->
+  <section class="clients-preview-section section scroll-reveal-left">
+    <div class="container">
+      <div class="section-header scroll-reveal-top">
+        <span class="section-label">Nos clients</span>
+        <h2 class="section-title">Ils nous font <span class="green">confiance</span></h2>
+        <div class="divider"></div>
+      </div>
+      <p class="clients-intro scroll-reveal-fade delay-200">
+        Nous avons dans notre portefeuille les clients suivants : Inacom, Toyota Angola, Unitel,
+        nglobal, Drive Angola, Stylus – NCR, Robert Hudson, Norafrica, British American Tobacco,
+        Grupo WM, Grupo Lider, Paratus, Cimangola, Jonce, Sicasa, Centro Cerro, Siemens, Imovias,
+        Automatriz, RNT, Instituto Nacional de Petróleos, Angonabeiro, Centro Optico, Cochan, Inovia,
+        Prefangol, FGC, Angola Cabos, Yango, DDM, Kibabo, Novagest, Ponticelli, Heetch, Acrep, CSE,
+        Sanel, BigMedia, Hiperfrio, F.A.F, RCS, Casa dos Frescos, entre autres.
+      </p>
+      <div class="clients-marquee-wrap scroll-reveal-scale delay-300">
+        <div class="clients-marquee">
+          <span class="client-chip">Inacom</span>
+          <span class="client-chip">Toyota Angola</span>
+          <span class="client-chip">Unitel</span>
+          <span class="client-chip">Drive Angola</span>
+          <span class="client-chip">Stylus – NCR</span>
+          <span class="client-chip">Robert Hudson</span>
+          <span class="client-chip">Norafrica</span>
+          <span class="client-chip">British American Tobacco</span>
+          <span class="client-chip">Grupo WM</span>
+          <span class="client-chip">Grupo Lider</span>
+          <span class="client-chip">Paratus</span>
+          <span class="client-chip">Cimangola</span>
+          <span class="client-chip">Siemens</span>
+          <span class="client-chip">Instituto Nacional de Petróleos</span>
+          <span class="client-chip">Angonabeiro</span>
+          <span class="client-chip">Yango</span>
+          <span class="client-chip">Ponticelli</span>
+          <span class="client-chip">Heetch</span>
+          <span class="client-chip">BigMedia</span>
+          <span class="client-chip">Angola Cabos</span>
+          <span class="client-chip">Prefangol</span>
+          <span class="client-chip">FGC</span>
+          <span class="client-chip">Casa dos Frescos</span>
+        </div>
+      </div>
+      <div class="clients-cta scroll-reveal-bottom delay-400">
+        <a href="clients.html" class="btn btn-primary">Voir tous les clients <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════ -->
+  <footer id="footer" class="scroll-reveal-bottom">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="ERM International Group">
+          </a>
+          <p>Leader en systèmes de suivi de véhicules et gestion du carburant GPS/GSM. Partenaire officiel Novatronica® Portugal.</p>
+          <div class="footer-rccm">
+            EROMIL GROUP INTERNATIONAL SARL<br>
+            RCCM : CD/KNG/RCCM21-02230
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Présentation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="agents.html">Agents privés</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Frotasoft CAN bus</a></li>
+            <li><a href="services.html">TankControl</a></li>
+            <li><a href="services.html">Données véhicules</a></li>
+            <li><a href="services.html">DUT-E GSM</a></li>
+            <li><a href="services.html">Alertes carburant</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="fc-icon"><img src="images/local.webp" alt="Localisation" style="width: 16px; height: 16px;"></span>
+            <span>Luanda, rua dos Funante, casa nº 18, Prenda-Maianga – Angola</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="fc-icon"><img src="images/mail.webp" alt="Email" style="width: 16px; height: 16px;"></span>
+            <a href="mailto:ermentreprise.1@gmail.com">ermentreprise.1@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="fc-icon"><img src="images/tel.webp" alt="Téléphone" style="width: 16px; height: 16px;"></span>
+            <span>+244 XXX XXX XXX</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 EROMIL GROUP INTERNATIONAL SARL. Tous droits réservés.</p>
+        <div class="footer-address">
+          <span><img src="images/local.webp" alt="Localisation" style="width: 16px; height: 16px;"></span>
+          <span>Société enregistrée au RCCM CD/KNG/RCCM21-02230</span>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════════
+       MODALE IMAGE PLEIN ÉCRAN
+  ════════════════════════════════════════════════════════════ -->
+  <div id="image-modal" class="image-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img id="modal-image" src="" alt="" class="modal-image">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
