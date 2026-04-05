@@ -68,17 +68,12 @@
     const observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          // Stagger delay based on sibling index
-          const siblings = entry.target.parentElement
-            ? Array.from(entry.target.parentElement.children)
-            : [];
-          const idx = siblings.indexOf(entry.target);
-          entry.target.style.transitionDelay = (idx * 80) + 'ms';
+          // Use CSS delay classes instead of dynamic calculation for better performance
           entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.12, rootMargin: '50px' });
 
     targets.forEach(function (el) { observer.observe(el); });
   }
