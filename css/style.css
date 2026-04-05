@@ -2404,6 +2404,8 @@ p:last-child { margin-bottom: 0; }
 /* Responsive - Mobile */
 @media (max-width: 768px) {
   .leadership-section {
+    width: 100%;
+    max-width: 100%;
     flex-direction: column;
     text-align: center;
     gap: 16px;
