@@ -2188,6 +2188,28 @@ p:last-child { margin-bottom: 0; }
   .frota-features { grid-template-columns: 1fr; }
   .hero-stats { grid-template-columns: repeat(3, 1fr); }
   .clients-intro { margin-left: 20px; margin-right: 10px; text-align: justify; }
+  .about-content {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  .about-content p {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .about-detail-text {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  .about-detail-text p {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  .about-img-wrap {
+    min-height: auto;
+  }
 }
 
 @media (max-width: 480px) {
