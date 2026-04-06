@@ -1367,8 +1367,8 @@ p:last-child { margin-bottom: 0; }
   margin-top: 48px;
 }
 .agent-card {
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
+  background: #ffffff;
+  border: 1px solid rgba(34, 197, 94, 0.45);
   border-radius: var(--radius-xl);
   padding: 40px 36px;
   position: relative;
@@ -2367,10 +2367,8 @@ p:last-child { margin-bottom: 0; }
 .leadership-photo {
   width: 160px;
   height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--green-primary);
-  box-shadow: var(--shadow-md);
+  object-fit: contain;
+  background: var(--dark-bg);
 }
 
 .leadership-content {
@@ -2398,6 +2396,132 @@ p:last-child { margin-bottom: 0; }
   color: var(--text-secondary);
   line-height: 1.7;
   font-size: 1rem;
+}
+
+/* ── PCA Leader (Agents Page) ─────────────────────────────── */
+.pca-leader {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 56px 48px;
+  margin-bottom: 64px;
+  background: #ffffff;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.pca-leader:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 32px rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.pca-visual {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.pca-visual img {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+  background: var(--dark-bg);
+  border-radius: 0;
+  box-shadow: var(--shadow-lg);
+}
+
+.pca-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--green-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.pca-title-group {
+  margin-bottom: 20px;
+}
+
+.pca-role {
+  font-size: 0.95rem;
+  color: var(--green-primary);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pca-title-group h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pca-bio {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+.pca-contact {
+  display: flex;
+  gap: 16px;
+}
+
+.pca-contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.pca-contact a:hover {
+  background: var(--green-primary);
+  border-color: var(--green-primary);
+  transform: translateY(-4px);
+}
+
+.pca-contact img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(1);
+}
+
+.pca-contact a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .pca-leader {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 24px;
+  }
+  
+  .pca-visual img,
+  .pca-visual::after {
+    height: auto;
+    max-height: 300px;
+  }
+  
+  .pca-title-group h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .leadership-contact {
